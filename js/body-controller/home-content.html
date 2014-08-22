@@ -1,0 +1,64 @@
+<div ng-controller="HomeController as homeCtrl" class="fix-height">
+    <div class="center-block row col-lg-12">
+        <h3>Please Read The Following Points Before Filling-up This Form:</h3>
+
+        <p> - Provident Fund/Voluntary Provident Fund deduction through salary should not be shown in this form.</p>
+
+        <p ng-controller="HeaderController as header"> - Amount paid / payable during the year April
+            {{header.formDetails.fromYear}} - March {{header.formDetails.toYear}} should be filled in the space
+            provided.</p>
+
+        <p> - If you have not yet applied for PAN, Please Apply for the same immediately.</p>
+
+        <p> - The date on which the proofs to be submitted, will be intimated to you in due course.</p>
+    </div>
+    <div class="center-block row col-lg-12">
+
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Employee No.</label><span class="required">*</span></li>
+                <li><only-numbers><input type="text" required/></only-numbers></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Name of Employee</label><span class="required">*</span></li>
+                <li><input type="text" required/></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Department/Team</label><span class="required">*</span></li>
+                <li><input type="text" required/></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Residential Address</label><span class="required">*</span></li>
+                <li><textarea rows="8" cols="50" required></textarea></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>PAN (Permanent Account Number)</label><span class="required">*</span></li>
+                <li><input type="text" class="to-uppercase" maxlength="10" ng-minlength="10" required/></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Personal E-Mail ID</label><span class="required">*</span></li>
+                <li><p>Please provide your personal mail ID which is ACTIVE & which you are using for your personal use.
+                    (For sending FORM 16/16A Digitally signed)</p></li>
+                <li><input type="email" required/></li>
+            </ul>
+        </div>
+        <div class="row col-lg-12">
+            <ul class="row col-lg-12">
+                <li><label>Mobile No.</label><span class="required">*</span></li>
+                <li>
+                    <only-numbers><input id="mobile" type="text" maxlength="10" ng-minlength="10" required/></only-numbers>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

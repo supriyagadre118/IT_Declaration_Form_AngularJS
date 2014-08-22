@@ -1,0 +1,13 @@
+<div ng-controller="FooterController as footer" class="navbar-fixed-bottom text-center section-footer">
+    <div ng-controller="BodyController as bodyCtrl">
+        <span ng-if="!bodyCtrl.tabList[0].active">
+            <button id="btnPrev" class="btn btn-primary" ng-click="bodyCtrl.prev()">Prev</button>
+        </span>
+        <span ng-if="!bodyCtrl.tabList[7].active">
+            <button id="btnNext" class="btn btn-primary" ng-click="bodyCtrl.next()">Next</button>
+        </span>
+    </div>
+    <br/>
+    <button class="btn btn-primary" ng-click="footer.checkBeforeSubmit()">Submit</button>
+    <!--<div>{{ITForm.$valid}}</div>-->
+</div>

@@ -1,0 +1,14 @@
+<section>
+    <div ng-controller="BodyController as bodyCtrl">
+        <tabset>
+            <tab heading="{{bodyCtrl.tabList[0].tab}}" active="bodyCtrl.tabList[0].active" select="bodyCtrl.setIndex(0)"><home-content></home-content></tab>
+            <tab heading="{{bodyCtrl.tabList[1].tab}}" active="bodyCtrl.tabList[1].active" select="bodyCtrl.setIndex(1)"><deduction-six-content></deduction-six-content></tab>
+            <tab heading="{{bodyCtrl.tabList[2].tab}}" active="bodyCtrl.tabList[2].active" select="bodyCtrl.setIndex(2)"><deduction-six-a-content></deduction-six-a-content></tab>
+            <tab heading="{{bodyCtrl.tabList[3].tab}}" active="bodyCtrl.tabList[3].active" select="bodyCtrl.setIndex(3)"><housing-content></housing-content></tab>
+            <tab heading="{{bodyCtrl.tabList[4].tab}}" active="bodyCtrl.tabList[4].active" select="bodyCtrl.setIndex(4)"><hra-content></hra-content></tab>
+            <tab heading="{{bodyCtrl.tabList[5].tab}}" active="bodyCtrl.tabList[5].active" select="bodyCtrl.setIndex(5)"><lta-content></lta-content></tab>
+            <tab heading="{{bodyCtrl.tabList[6].tab}}" active="bodyCtrl.tabList[6].active" select="bodyCtrl.setIndex(6)"><other-declarations-content></other-declarations-content></tab>
+            <tab heading="{{bodyCtrl.tabList[7].tab}}" active="bodyCtrl.tabList[7].active" select="bodyCtrl.setIndex(7)"><other-exemptions-content></other-exemptions-content></tab>
+        </tabset>
+    </div>
+</section>

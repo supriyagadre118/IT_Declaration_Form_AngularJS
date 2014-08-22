@@ -1,0 +1,56 @@
+.required {
+    color: #b10007;
+}
+
+div, h2, h5 {
+    color: #008eb1;
+}
+
+.section-header {
+    background: #fbfaf7;
+    border: 2px solid #008eb1;
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.section-footer {
+    background: #fbfaf7;
+    border: 2px solid #008eb1;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-tabs {
+    cursor: default;
+}
+
+p {
+    color: #666;
+}
+
+input, textarea {
+    color: #000000;
+}
+
+.fix-height {
+    max-height: 720px;
+    min-height: 720px;
+    overflow-y: scroll;
+    /*border-bottom: 1px solid #ccc;*/
+    padding-bottom: 2em;
+}
+.ng-invalid {
+    border: 1px solid red;
+}
+.to-uppercase {
+    text-transform: uppercase;
+}
+
+.slider-padding {
+    padding: 5px 0px 15px 0px;
+}

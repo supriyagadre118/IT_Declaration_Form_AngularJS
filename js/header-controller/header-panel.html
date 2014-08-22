@@ -1,0 +1,8 @@
+<section ng-controller="HeaderController as header">
+    <div class="row col-lg-12 center-block text-center divider border-row section-header">
+        <h2>Income Tax Declaration Form for Financial Year <b>{{header.formDetails.fromYear +" - "+ header.formDetails.toYear}}</b></h2>
+        <h5>Your username <b>{{header.userDetails.email}}</b> will be recorded when you submit this form.</h5>
+        <h5> Not <b>{{header.userDetails.username}}</b>? <a>Signout</a></h5>
+        <h5 class="required">*Required</h5>
+    </div>
+</section>
